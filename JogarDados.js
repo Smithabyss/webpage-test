@@ -1,31 +1,8 @@
 function JogarDados()
 {
-    var img = document.querySelector('#img');
+    var img = document.querySelectorAll('img')[0];
     var num = Math.floor(1+Math.random()*6); 
+    var srcImg = "Assets/Dado"+ num +".png";
+    img.setAttribute('src', srcImg);
 
-    if(num === 1)
-    {
-        img.src = 'Assets/Dado1.png';
-    }
-    if(num === 2)
-    {
-        img.src = 'Assets/Dado2.png';
-    }
-    if(num === 3)
-    {
-        img.src = 'Assets/Dado3.png';
-    }
-    if(num === 4)
-    {
-        img.src = 'Assets/Dado4.png';
-    }
-    if(num === 5)
-    {
-        img.src = 'Assets/Dado5.png';
-    }
-
-    if(num === 6)
-    {
-        img.src = 'Assets/Dado6.png';
-    }
 }
